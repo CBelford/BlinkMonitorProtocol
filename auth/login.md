@@ -19,7 +19,7 @@ Client Login to Blink Account on Blink Servers
 - **account&#46;tier** - Tier (see notes below)
 
 ### Notes
-Depending on where your Blink system is registered, the tier info appears necessary to form the localized URL of the REST endpoint for future calls. Current logic seems to be to update the REST endpoint using region.tier data in the response:
+Depending on where your Blink system is registered, the tier info appears necessary to form the localized URL of the REST endpoint for future calls. Current logic seems to be to update the REST endpoint using account.tier data in the response:
 - from `https://rest-prod.immedia-semi.com`
 - to `https://rest-{account.tier}.immedia-semi.com` Reports indicate that all regions are not implemented equally, i.e. not all endpoints are available in all regions
 
